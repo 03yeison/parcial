@@ -385,10 +385,10 @@
     <span class="icon">🌌</span> VIAJAHOY
   </div>
   <nav>
-    <a href="#destinos">Destinos</a>
-    <a href="#experiencias">Experiencias</a>
-    <a href="contacto.html">Contacto</a>
-  </nav>
+    <a href="{% url 'turismo' %}">Destinos</a>
+    <a href="{% url 'turismo' %}">Experiencias</a>
+    <a href="{% url 'turismo' %}">Contacto</a>
+  </nav>    
 </header>
 
 <section class="hero">
@@ -407,8 +407,8 @@
     </div>
 
     <div class="hero-actions">
-      <a class="btn btn-primary" href="#destinos">Explorar destinos</a>
-      <a class="btn btn-ghost" href="contacto.html">Hablar con un asesor</a>
+      <a class="btn btn-primary" href="{% url 'turismo' %}">Explorar destinos</a>
+      <a class="btn btn-ghost" href="{% url 'turismo' %}">Hablar con un asesor</a>
     </div>
   </div>
 
@@ -442,7 +442,7 @@
   <div class="cards">
     <article class="card">
       <div class="card-img">
-        <img src="https://images.unsplash.com/photo-1500534314211-0a24cd03f2c0?auto=format&fit=crop&w=900&q=80"
+        <img src="https://media.istockphoto.com/id/1386156141/es/foto/la-vista-nocturna-de-la-ciudad-frente-a-la-carretera-de-asfalto.jpg?s=1024x1024&w=is&k=20&c=gzuOEFqJaSP4ioSaA3h6SDVUNtJYKTIngnnETTZEoBc="
              alt="Ciudad nocturna">
       </div>
       <div class="card-title-row">
@@ -491,13 +491,13 @@
       ¿Quieres algo totalmente personalizado? <strong>Diseñamos tu viaje desde cero</strong> según tu perfil,
       presupuesto y fechas. 
     </p>
-    <a class="btn btn-primary" href="contacto.html">Solicitar asesoría</a>
+    <a class="btn btn-primary" href="{% url 'turismo' %}">Solicitar asesoría</a>
   </div>
 </section>
 
 <footer>
   <span>© 2025 Viajahoy · Plataforma de turismo inteligente.</span>
-  <span>¿Dudas? <a href="contacto.html">Contáctanos aquí</a></span>
+  <span>¿Dudas? <a href="{% url 'turismo' %}">Contáctanos aquí</a></span>
 </footer>
 
 </body>

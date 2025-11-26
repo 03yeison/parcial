@@ -136,6 +136,8 @@
     /* FORMULARIO */
     form {
       margin-top: 6px;
+         padding: 20px 24px;
+         
     }
 
     label {
@@ -194,6 +196,7 @@
       grid-template-rows: minmax(0, 1.4fr) minmax(0, 1fr);
       gap: 14px;
       height: 100%;
+      width: 100%;
     }
 
     /* IMAGEN PRINCIPAL */
@@ -202,6 +205,7 @@
       border-radius: 18px;
       overflow: hidden;
       box-shadow: 0 16px 40px rgba(0,0,0,0.85);
+      
     }
 
     .hero-image img {
@@ -211,6 +215,7 @@
       transform: scale(1.04);
       transition: .35s;
       display: block;
+      
     }
 
     .hero-image:hover img {
@@ -241,7 +246,7 @@
     }
 
     .hero-location {
-      font-size: 16px;
+      font-size: 20px;
       font-weight: 600;
     }
 
@@ -311,7 +316,7 @@
 
 <header>
   <div class="logo">VIAJAHOY · CONTACTO</div>
-  <a href="turismo.html" class="btn-back">← Volver a la vista principal</a>
+  <a href="{% url 'contacto' %}" class="btn-back">← Volver a la vista principal</a>
 </header>
 
 <main class="layout">
